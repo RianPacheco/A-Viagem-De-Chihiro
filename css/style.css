@@ -7,7 +7,8 @@ body{
     height: 100vh;
     background: linear-gradient(130.02deg, #628E75 0.66%, #1A4855 83.32%);
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    overflow: hidden; 
 }
 
 /***CABEÇÃLHO DO PROJETO ***/
@@ -42,6 +43,10 @@ main{
 
 section{
     width: 500px;
+}
+
+.image-mobile{
+    display: none;
 }
 
 .HAYAO{
@@ -97,3 +102,36 @@ button{
     background-color: transparent;
     border: 2px solid #658E76;
 }
+
+@media (max-width:1100px){
+        body{
+            height: 1200px;
+            overflow: scroll;
+            overflow-x: hidden;
+            flex-direction: column;
+        }
+        header{
+            padding: 20px;
+        }
+
+        .image-mobile{
+            display: flex;
+            justify-content: center;
+            width: 500px;
+        }
+        .image-responsiva{
+            width: 0px;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            width: 470px;
+        }
+        .image-desktop{
+            display: none;
+        }
+        .trailer{
+            display: none;
+        }
+} 
